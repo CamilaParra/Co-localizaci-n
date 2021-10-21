@@ -59,7 +59,7 @@ latlon3=[Latitud_satelite Longitud_satelite];%satelite
 B = ones(2790,2); %matriz de unos
 latlon4=B.*latlon1; %boya matriz
 
-for i=length(Latitud_satelite)
+for i=1:length(Latitud_satelite)
     [d1km(i) d2km(i)]=lldistkm(latlon4(i,:),latlon3(i,:))
 end
 
